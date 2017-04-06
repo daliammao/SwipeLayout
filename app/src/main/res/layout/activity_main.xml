@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daliammao.widget.swipelayoutlib.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/godfather"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:swipe_click_to_close="true"
+    app:swipe_drag_edge="bottom">
+
+    <FrameLayout
+        android:id="@+id/back_left"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:background="#ff0000">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="1"
+            android:textColor="@android:color/white"
+            android:textSize="150sp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/back_top"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#00cc00">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="2"
+            android:textColor="@android:color/white"
+            android:textSize="150sp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/back_right"
+        android:layout_width="290dp"
+        android:layout_height="match_parent"
+        android:background="#004499">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="3"
+            android:textColor="@android:color/white"
+            android:textSize="150sp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/back_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="4"
+            android:textColor="@android:color/white"
+            android:textSize="150sp" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <com.daliammao.widget.swipelayoutlib.SwipeLayout
+            android:id="@+id/people"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            app:swipe_drag_edge="bottom"
+            app:swipe_click_to_close="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="130dp">
+
+            <Button
+                android:id="@+id/go_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_gravity="bottom"
+                android:text="和我一起眼保健操"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_gravity="left"
+                android:text="( *・ω・)✄╰ひ╯"
+                android:textSize="19sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@android:color/white">
+
+                <TextView
+                    android:id="@+id/tv_face"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:text="( ˇωˇ )"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/tv_face_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:text="不明真相的围观群众"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </com.daliammao.widget.swipelayoutlib.SwipeLayout>
+
+        <Switch
+            android:id="@+id/switch_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:checked="true"
+            android:text="左部滑动开启" />
+
+        <Switch
+            android:id="@+id/switch_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:checked="true"
+            android:text="顶部滑动开启" />
+
+        <Switch
+            android:id="@+id/switch_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:checked="true"
+            android:text="右部滑动开启" />
+
+        <Switch
+            android:id="@+id/switch_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="30dp"
+            android:checked="true"
+            android:text="右部滑动开启" />
+
+        <Switch
+            android:id="@+id/switch_model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="110dp"
+            android:layout_marginLeft="30dp"
+            android:checked="false"
+            android:text="打开的姿势" />
+    </RelativeLayout>
+</com.daliammao.widget.swipelayoutlib.SwipeLayout>

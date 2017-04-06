@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SwipeLayout">
+        <attr name="swipe_drag_edge">
+            <flag name="left" value="1" />
+            <flag name="right" value="2" />
+            <flag name="top" value="4" />
+            <flag name="bottom" value="8" />
+        </attr>
+        <attr name="swipe_left_edge_offset" format="dimension" />
+        <attr name="swipe_right_edge_offset" format="dimension" />
+        <attr name="swipe_top_edge_offset" format="dimension" />
+        <attr name="swipe_bottom_edge_offset" format="dimension" />
+        <attr name="swipe_show_mode" format="enum">
+            <enum name="lay_down" value="0" />
+            <enum name="pull_out" value="1" />
+        </attr>
+        <attr name="swipe_click_to_close" format="boolean" />
+    </declare-styleable>
+</resources>

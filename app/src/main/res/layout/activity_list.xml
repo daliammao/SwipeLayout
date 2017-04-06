@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar"/>
+    <com.daliammao.widget.swipelayoutlib.SwipeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/godfather"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:swipe_drag_edge="bottom"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/imagelist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ListView
+            android:id="@+id/textlist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.daliammao.widget.swipelayoutlib.SwipeLayout>
+</LinearLayout>
